@@ -1,7 +1,13 @@
 package com.Api.Productos.Models;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "producto")
 public class Productos {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private Integer precio;
