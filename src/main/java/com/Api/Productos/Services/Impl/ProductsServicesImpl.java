@@ -30,6 +30,11 @@ public class ProductsServicesImpl implements ProductsServices {
     }
 
     @Override
+    public String PostProductps(Productos producto) {
+        return null;
+    }
+
+    @Override
     public String PostProductos(Productos producto)
     {
         productosRepository.save(producto);
@@ -48,8 +53,7 @@ public class ProductsServicesImpl implements ProductsServices {
 
            productosRepository.save(productosNew);
            return "Producto Actualizado!";
-       } else
-       {
+       } else {
            return "Hubo un error";
        }
     }

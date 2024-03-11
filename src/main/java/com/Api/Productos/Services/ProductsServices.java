@@ -10,6 +10,8 @@ public interface ProductsServices {
 
     String DeleteProductos(Long id);
 
+    String PostProductps(Productos producto);
+
     String PostProductos(Productos producto);
 
     String PutProductos(Productos producto, Long id);

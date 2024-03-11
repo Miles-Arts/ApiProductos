@@ -1,11 +1,13 @@
 package com.Api.Productos.Controllers;
 
 import com.Api.Productos.Models.Productos;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@RequestMapping
 public class ProductsServices {
     public Object PostProductos(Productos producto) {
         return producto;
